@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from '../../pages/main-page/MainPage';
 import ServicePage from '../../pages/service-page/ServicePade';
 import ServiceDetailPage from '../../pages/service-detail-page/ServiceDetailPage';
+import Auth from '../../pages/auth/Auth';
 import { Responses404 } from '@consta/uikit/Responses404';
 import MainLayout from '../../layout/main-layouts/MainLayout';
 import { AppRoute } from '../../const';
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<MainPage />} />
             <Route path={AppRoute.service} element={<ServicePage />} />
             <Route path={AppRoute.servisDetails} element={<ServiceDetailPage />} />
+            <Route path={AppRoute.auth} element={<Auth />} />
           </Route>
           <Route path='*' element={<Responses404 />} />
         </Routes>

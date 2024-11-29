@@ -1,5 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import { Button } from '@consta/uikit/Button';
 import { Layout } from '@consta/uikit/Layout';
 import { Text } from '@consta/uikit/Text';
@@ -32,7 +31,7 @@ const Header = () => {
                         </NavLink>
                     </Layout>
                     <Layout className="header_registration">
-                        <NavLink to={AppRoute.serviceDetails}>
+                        <NavLink to={AppRoute.auth}>
                             <Button label="Регистрация" view="primary" />
                         </NavLink>
                     </Layout>
