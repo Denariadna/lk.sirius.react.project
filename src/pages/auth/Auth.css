@@ -29,3 +29,7 @@
         transition: box-shadow .3s linear;
     }
 }
+
+.authInformer {
+    margin: 20px 40px;
+}
