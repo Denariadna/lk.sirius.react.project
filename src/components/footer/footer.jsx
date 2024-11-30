@@ -27,7 +27,7 @@ const Footer = () => {
                     </NavLink>
                 </Layout>
                 <Layout className="footer_registration">
-                    <NavLink to={AppRoute.serviceDetails}>
+                    <NavLink to={AppRoute.auth}>
                         <Button label="Регистрация" view="primary" />
                     </NavLink>
                 </Layout>

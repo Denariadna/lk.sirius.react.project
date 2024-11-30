@@ -18,7 +18,7 @@ function App() {
           <Route path={AppRoute.main} element={<MainLayout />}>
             <Route index element={<MainPage />} />
             <Route path={AppRoute.service} element={<ServicePage />} />
-            <Route path={AppRoute.servisDetails} element={<ServiceDetailPage />} />
+            <Route path={AppRoute.serviceDetails} element={<ServiceDetailPage />} />
             <Route path={AppRoute.auth} element={<Auth />} />
           </Route>
           <Route path='*' element={<Responses404 />} />
