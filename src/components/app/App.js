@@ -12,6 +12,7 @@ import Profile from '../../pages/profile/Profile';
 import ProtectedRoute from '../ProtectedRoute';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../store/userSlice';
+import ScrollToTop from '../scroll-to-top/scroll-to-top';
 
 function App() {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ function App() {
   return (
     <Theme preset={presetGpnDefault}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path={AppRoute.main} element={<MainLayout />}>
             <Route index element={<MainPage />} />
