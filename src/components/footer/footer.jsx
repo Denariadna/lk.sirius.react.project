@@ -16,6 +16,8 @@ const getStyleForNavLink = ({ isActive }) =>
     ;
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <Layout className='footer'>
             <Layout className="footer_nav">
@@ -34,7 +36,7 @@ const Footer = () => {
                 </Layout>
             </Layout>
             <Text lineHeight="m" view="primary" className="footer_title">
-                @Денисова Арина
+                © {currentYear} Денисова Арина
             </Text>
         </Layout>
     );
