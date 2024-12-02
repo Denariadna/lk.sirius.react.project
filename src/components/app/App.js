@@ -13,6 +13,7 @@ import ProtectedRoute from '../ProtectedRoute';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../store/userSlice';
 import ScrollToTop from '../scroll-to-top/scroll-to-top';
+import { Button } from '@consta/uikit/Button';
 
 function App() {
   const dispatch = useDispatch();
@@ -44,7 +45,7 @@ function App() {
               }
             />
           </Route>
-          <Route path="*" element={<Responses404 />} />
+          <Route path="*" element={<Responses404 actions={<Button label={"Вернуться назад"} onClick={() => window.history.back()} />} />} />
         </Routes>
       </BrowserRouter>
     </Theme>
