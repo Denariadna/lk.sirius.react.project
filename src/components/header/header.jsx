@@ -46,7 +46,7 @@ const Header = () => {
     return (
         <Layout className="header">
             <Text lineHeight="m" view="primary" className="header_title">
-                {userData ? `${userData.firstName} ${userData.lastName}` : "Денисова Арина"}
+                @Денисова Арина
             </Text>
             <Layout className="header_nav">
                 <Layout className="header_nav-buttons">
