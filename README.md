@@ -43,56 +43,16 @@
    - Возможность проведения онлайн-собраний, конференций и тимбилдинговых мероприятий.
 ### Структура проекта
 lk.sirius.react.project/
-├── package.json
-├── package-lock.json
-├── public
-│   ├── favicon.ico
-│   ├── fonts
-│   ├── index.html
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   └── robots.txt
-├── README.md
-└── src
-    ├── components
-    │   ├── app
-    │   │   ├── App.css
-    │   │   └── App.js
-    │   ├── card_main
-    │   │   ├── card_main.css
-    │   │   └── card_main.jsx
-    │   ├── card_services
-    │   │   ├── card.css
-    │   │   └── card.jsx
-    │   ├── footer
-    │   │   └── footer.jsx
-    │   └── header
-    │       └── header.jsx
-    ├── const.js
-    ├── index.css
-    ├── index.js
-    ├── layout
-    │   └── main-layouts
-    │       └── MainLayout.jsx
-    ├── logo.svg
-    ├── __mocks__
-    │   └── fake_info
-    │       └── FakeInfo.js
-    ├── pages
-    │   ├── auth
-    │   │   ├── Auth.css
-    │   │   └── Auth.jsx
-    │   ├── main-page
-    │   │   └── MainPage.jsx
-    │   ├── service-detail-page
-    │   │   ├── ServiceDetailPage.css
-    │   │   └── ServiceDetailPage.jsx
-    │   └── service-page
-    │       └── ServicePade.jsx
-    ├── reportWebVitals.js
-    ├── setupTests.js
-    └── store
+├── public/            #публичные файлы проекта  
+├── README.md/          #описание проекта  
+└── src/                #основа проекта  
+|   ├── components/     #основные компоненты страниц  
+|   ├── components/     #основные компоненты страниц  
+|   ├── const.js/       #сохранение ссылок на страницы  
+|   ├── layout/         #шаблоны проекта  
+|   ├── __mocks__/      #фейковые данные  
+|   ├── pages/          #страницы проекта  
+|   └── store/          #модели для работы с состоянием  
 
 ### Концепция разработки
 - Компоненты разделены по функциям (например, Dashboard, WebinarPage).
