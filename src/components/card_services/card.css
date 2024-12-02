@@ -1,10 +1,14 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../../../public/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    /* Большее расстояние между карточками */
+    gap: 70px;
     justify-content: center;
-    padding: 20px;
+    padding: 60px;
 }
 
 .card-item {
@@ -27,6 +31,7 @@
     object-fit: cover;
     margin-bottom: 15px;
     border-radius: 8px;
+    font-family: 'Comfortaa';
 }
 
 .card-content {
@@ -41,10 +46,12 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
+    font-family: 'Comfortaa';
 }
 
 .card-description {
     color: #6a6a6a;
     font-size: 1rem;
     margin: 10px 0;
+    font-family: 'Comfortaa';
 }

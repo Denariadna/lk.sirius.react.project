@@ -4,6 +4,7 @@ import { Layout } from '@consta/uikit/Layout';
 import { Text } from '@consta/uikit/Text';
 import { NavLink } from "react-router";
 import { AppRoute } from "../../const";
+import './footer.css';
 
 const getStyleForNavLink = ({ isActive }) =>
     isActive
@@ -20,19 +21,19 @@ const Footer = () => {
             <Layout className="footer_nav">
                 <Layout className="footer_nav-buttons">
                     <NavLink to={AppRoute.main} style={getStyleForNavLink}>
-                        <Button label="Главная" view="clear" form="round" />
+                        <Button className="footer-text" label="Главная" view="clear" form="round" />
                     </NavLink>
                     <NavLink to={AppRoute.service} style={getStyleForNavLink}>
-                        <Button label="Услуги" view="clear" form="round" />
+                        <Button className="footer-text" label="Услуги" view="clear" form="round" />
                     </NavLink>
                 </Layout>
                 <Layout className="footer_registration">
                     <NavLink to={AppRoute.auth}>
-                        <Button label="Регистрация" view="primary" />
+                        <Button className="footer-text" label="Регистрация" view="primary" />
                     </NavLink>
                 </Layout>
             </Layout>
-            <Text lineHeight="m" view="primary" className="header_title">
+            <Text lineHeight="m" view="primary" className="footer_title">
                 @Денисова Арина
             </Text>
         </Layout>

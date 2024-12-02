@@ -48,7 +48,7 @@ const Card_main = () => {
                                     {item.description}
                                 </Text>
                                 <Text size="s" view="ghost" className="news-date">
-                                    {item.createdAt}
+                                    {item.createdAt.slice(0, 10)}
                                 </Text>
                             </div>
                         </Card>

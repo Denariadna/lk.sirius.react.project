@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../../../public/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
 .news-list {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +31,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
+
 }
 
 .news-title {
@@ -33,19 +39,23 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
+    font-family: 'Comfortaa';
 }
 
 .news-description {
     color: #6a6a6a;
     font-size: 1rem;
     margin: 10px 0;
+    font-family: 'Comfortaa';
 }
 
 .news-date {
     text-align: end;
+    font-family: 'Comfortaa';
 }
 
 .title-news {
     font-weight: bold;
     text-align: center;
+    font-family: 'Comfortaa';
 }

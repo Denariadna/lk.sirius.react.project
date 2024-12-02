@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../../../public/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
+.footer {
+    height: 54px;
+    justify-content: space-between;
+    align-items: end;
+    padding: 60px 150px;
+    border-top: solid 1px black;
+    bottom: 0;
+
+}
+
+.footer_title {
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: "Comfortaa";
+}
+
+.footer_nav {
+    height: 54px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+}
+
+.footer_nav-buttons {
+    height: 48px;
+    padding: 10px 17px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-text {
+    font-family: "Comfortaa";
+    font-size: 18px;
+}
+
+.footer_registration {
+    width: 174px;
+    height: 54px;
+    padding: 10px;
+    border-radius: 40px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    font-family: "Comfortaa";
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 15px;
+        font-family: "Comfortaa";
+    }
+
+    .footer_title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        font-family: "Comfortaa";
+    }
+
+    .footer_nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer_nav-buttons {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer_registration {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer_title {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .footer_nav-buttons button {
+        width: 100%;
+    }
+
+    .footer_registration {
+        width: 100%;
+        height: auto;
+        padding: 8px;
+        border-radius: 10px;
+    }
+}
