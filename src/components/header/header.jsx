@@ -6,6 +6,7 @@ import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { AppRoute } from "../../const";
 import "./header.css";
 import { User } from "@consta/uikit/User";
+import { useSelector } from 'react-redux';
 
 const getStyleForNavLink = ({ isActive }) => ({
     boxShadow: isActive ? "0 0 10px rgba(0, 0, 0, 0.5)" : "none",
@@ -13,6 +14,7 @@ const getStyleForNavLink = ({ isActive }) => ({
 });
 
 const Header = () => {
+    const userId = useSelector((state) => state.user.user);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [userData, setUserData] = useState(null);
     const navigate = useNavigate();
@@ -43,6 +45,7 @@ const Header = () => {
         navigate(AppRoute.main);
     };
 
+
     return (
         <Layout className="header">
             <Text lineHeight="m" view="primary" className="header_title">
@@ -57,7 +60,7 @@ const Header = () => {
                         <Button className="header-text" label="Услуги" view="clear" form="round" />
                     </NavLink>
                     {isAuthenticated && (
-                        <NavLink to={AppRoute.user} style={getStyleForNavLink}>
+                        <NavLink to={`/user/${userId.id}`} style={getStyleForNavLink}>
                             <div className='header_user'>
                                 <User
                                     size="l"

@@ -11,6 +11,7 @@ const userSlice = createSlice({
     reducers: {
         setUser(state, action) {
             state.user = action.payload;
+            state.isAuth = true;
         },
         setToken(state, action) {
             state.token = action.payload;
@@ -20,6 +21,7 @@ const userSlice = createSlice({
             state.user = null;
             state.token = null;
             localStorage.removeItem('token');
+            state.isAuth = false;
         },
     },
 });

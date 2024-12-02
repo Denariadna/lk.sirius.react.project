@@ -15,6 +15,7 @@ import { setUser } from '../../store/userSlice';
 import ScrollToTop from '../scroll-to-top/scroll-to-top';
 import { Button } from '@consta/uikit/Button';
 
+
 function App() {
   const dispatch = useDispatch();
 
@@ -36,14 +37,7 @@ function App() {
             <Route path={AppRoute.service} element={<ServicePage />} />
             <Route path={AppRoute.serviceDetails} element={<ServiceDetailPage />} />
             <Route path={AppRoute.auth} element={<Auth />} />
-            <Route
-              path={AppRoute.user}
-              element={
-                <ProtectedRoute>
-                  <Profile />
-                </ProtectedRoute>
-              }
-            />
+            <Route path={AppRoute.userDetails} element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           </Route>
           <Route path="*" element={<Responses404 actions={<Button label={"Вернуться назад"} onClick={() => window.history.back()} />} />} />
         </Routes>

@@ -3,7 +3,7 @@ export const AppRoute = {
     service: '/service',
     serviceDetails: '/Service/:id',
     auth: '/login',
-    user: '/user/:id',
+    userDetails: '/user/:id',
 }
 
 export const ApiPath = {

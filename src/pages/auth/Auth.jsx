@@ -19,14 +19,15 @@ const Auth = () => {
 
     const fieldChangeHandler = (evt) => {
         const { name, value } = evt.target;
-        setFormData({
-            ...formData,
+        setFormData((prev) => ({
+            ...prev,
             [name]: value,
-        });
+        }));
     };
 
     const formSubmitHandle = async (evt) => {
         evt.preventDefault();
+
         if (formData.username.trim() && formData.password.trim()) {
             try {
                 const response = await fetch("https://dummyjson.com/users");
@@ -75,10 +76,11 @@ const Auth = () => {
 
     return (
         <div className="feedback-form-container">
-            <form className="feedback-form">
-                <label htmlFor="firstName">Имя:</label>
+            <form className="feedback-form" onSubmit={formSubmitHandle}>
+                <label htmlFor="username">Имя:</label>
                 <input
                     className="username"
+                    id="username"
                     name="username"
                     value={formData.username}
                     onChange={fieldChangeHandler}
@@ -86,6 +88,7 @@ const Auth = () => {
                 <label htmlFor="password">Пароль:</label>
                 <input
                     className="password"
+                    id="password"
                     name="password"
                     type="password"
                     value={formData.password}
@@ -104,7 +107,7 @@ const Auth = () => {
                     size="m"
                     label="Вход"
                     form="round"
-                    onClick={formSubmitHandle}
+                    type="submit"
                 />
             </form>
         </div>

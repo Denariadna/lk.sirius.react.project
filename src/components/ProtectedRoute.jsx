@@ -4,11 +4,12 @@ import { useSelector } from "react-redux";
 import { AppRoute } from "../const";
 
 const ProtectedRoute = ({ children }) => {
-    const user = useSelector((state) => state.user);
+    const isAuth = useSelector((state) => state.user.isAuth);
+    const user = useSelector((state) => state.user.user);
 
-    // Если пользователь не авторизован, перенаправляем на страницу авторизации
-    if (!user && !localStorage.getItem("user")) {
-        return <Navigate to={AppRoute.auth} />;
+    // Проверка авторизации и наличия корректного пользователя
+    if (!isAuth || !user || !user.id) {
+        return <Navigate to={AppRoute.main} replace />;
     }
 
     return children;
