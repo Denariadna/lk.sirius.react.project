@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../../../public/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
+.feedback-form-container {
+    min-height: 75vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Comfortaa';
+}
+
+.feedback-form input {
+    border: 1px solid #a4a4a4;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #f8f8ff;
+    font-family: 'Comfortaa';
+
+    &:active,
+    &:hover,
+    &:focus {
+        box-shadow: 2px 2px 5px 0px rgba(128, 128, 128, .7);
+        transition: box-shadow .3s linear;
+    }
+}
+
+.authInformer {
+    margin: 20px 40px;
+    font-family: 'Comfortaa';
+}
+
+.authButton {
+    font-family: 'Comfortaa';
+}
+
+.form-field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.username,
+.password {
+    font-size: 18px;
+}
+
+.authLabel {
+    font-size: 32px !important;
+}

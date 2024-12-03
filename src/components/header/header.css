@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../../../public/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
+.header {
+    height: 54px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 150px;
+}
+
+.header_title {
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: "Comfortaa";
+}
+
+.header_nav {
+    height: 54px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+}
+
+.header_nav-buttons {
+    height: 48px;
+    padding: 10px 17px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.header-text {
+    font-family: "Comfortaa";
+    font-size: 18px;
+}
+
+.header_registration {
+    width: 174px;
+    height: 54px;
+    padding: 10px;
+    border-radius: 40px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    font-family: "Comfortaa";
+}
+
+.header_user {
+    border-radius: 40px;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    font-family: "Comfortaa";
+}
+
+.header_user_info {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 15px;
+        font-family: "Comfortaa";
+    }
+
+    .header_title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        font-family: "Comfortaa";
+    }
+
+    .header_nav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header_nav-buttons {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header_registration {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 624px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .header_nav {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .header_title {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .header_nav-buttons {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .header_registration {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 10px;
+    }
+}

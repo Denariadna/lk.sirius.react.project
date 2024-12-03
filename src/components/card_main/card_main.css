@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../../../public/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf');
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.news-item {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+
+}
+
+.news-title {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Comfortaa';
+}
+
+.news-description {
+    color: #6a6a6a;
+    font-size: 1rem;
+    margin: 10px 0;
+    font-family: 'Comfortaa';
+}
+
+.news-date {
+    text-align: end;
+    font-family: 'Comfortaa';
+}
+
+.title-news {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Comfortaa';
+}
